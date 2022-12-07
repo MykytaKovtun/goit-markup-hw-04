@@ -330,6 +330,14 @@ header{
     text-align: center;
     letter-spacing: 0.03em;
 }
+.item-box-icon{
+
+}
+.item-icon{
+    width: 20px;
+    height: 20px;
+}
+
 
 /* fotter */
 footer{
