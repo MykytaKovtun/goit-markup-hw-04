@@ -110,6 +110,7 @@ header{
 .navigation-position:last-child{
     margin-right: 0;
 }
+
 .navigation-item {
     display: block;
     padding: 32px 0 ;
@@ -130,12 +131,16 @@ header{
 }
 
 .box-two {
-    margin-left: 344px;
+    margin-left: 318px;
     display: flex;
 }
 
-.feedback-item {
-    display: inline-block;
+.feedback-item{
+    display: flex;
+    align-items: center;
+    display: block;
+    align-items: center;
+    gap: 10px;
     padding: 32px 0;
     color: var(--color-subtitle);
     font-weight: 500;
@@ -149,13 +154,36 @@ header{
 .feedback-item:focus{
     color: var(--color-hoverfocus);
 }
+.feedback-icon{
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    vertical-align: middle;
+    fill: currentColor;
+}
+
 /* main index */
 .primary-maintitle{
     background: var(--color-maintitle);
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.overlay{
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image:
+            linear-gradient(to right, 
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/title-Img.jpg);
 }
 .maintitle {
-    width: 696px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -213,8 +241,15 @@ header{
     display: block;
     max-width: 270px;
 }
+.subfeatures-icon{
+    width: 270px;
+    height: 120px;
+    background-color: var(--color-grey);
+    padding: 25px 100px;
+}
 
 .subfeatures-headline {
+    margin-top: 30px;
     color: var(--color-title);
     font-weight: 700;
     font-size: 14px;
