@@ -55,6 +55,9 @@ body{
     --color-hoverfocusbutton: #188CE8;
     --color-grey: #F5F4FA;
     --colorforborder: #EEEEEE;
+    --coloricon: #AFB1B8;
+    --colorhovericon: #2196F3;
+    --backgroundfottericon: rgba(255, 255, 255, 0.1);
 }
 
 /* header */
@@ -314,6 +317,7 @@ header{
 }
 
 .item-headline {
+
     color: var(--color-title);
     font-weight: 500;
     font-size: 16px;
@@ -323,6 +327,7 @@ header{
 }
 
 .item-paragraf {
+
     margin-top: 10px;
     color: var(--color-subtitle);
     font-size: 16px;
@@ -330,12 +335,71 @@ header{
     text-align: center;
     letter-spacing: 0.03em;
 }
-.item-box-icon{
-
+.item-box-list {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-.item-icon{
+
+.item-box-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.item-box-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    fill: var(--coloricon);
+}
+
+.item-icon {
     width: 20px;
     height: 20px;
+
+}
+.item-box-link:hover{
+    fill: var(--color-forbackground);
+    background-color: var(--color-hoverfocus); 
+}
+.heading-clients {
+    color: var(--color-title);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-item {
+    padding: 16px 32px;
+}
+.clients-link{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--coloricon);
+    border-radius: 4px;
+    fill: var(--coloricon);
+}
+.clients-link:hover{
+    fill: var(--colorhovericon);
+    border: var(--colorhovericon);
+}
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+
 }
 
 
@@ -343,6 +407,11 @@ header{
 footer{
     background: #2F303A;
     padding: 60px 0px;
+}
+.fotter-flex-container{
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
 .logo2 {
     display: inline-block;
@@ -409,6 +478,50 @@ footer{
 
 .contact-item:focus {
     color: var(--color-hoverfocus);
+}
+.fotter-subtitle-icon{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-forbackground);
+}
+.fotter-box-icon {
+
+}
+
+.fotter-subtitle-icon {
+    display: block;
+}
+
+.footer-list-icon {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.fotter-item-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.fotter-link-icon {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--backgroundfottericon);
+    border-radius: 50%;
+    fill: var(--color-forbackground);
+}
+.fotter-link-icon:hover{
+    background: var(--colorhovericon);
+}
+.footer-icon {
+    width: 20px;
+    height: 20px;
 }
 
 /* main portfolio */
